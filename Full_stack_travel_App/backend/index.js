@@ -136,7 +136,7 @@ app.post('/api/create-checkout-session', fetchuser, async (req, res) => {
     }],
     customer: customer.id,
     mode: "payment",
-    success_url: `${process.env.FRONTEND_URL}/success',
+     success_url: `${process.env.FRONTEND_URL}/success`,
     cancel_url: `${process.env.FRONTEND_URL}/cancel`,
 
   })
