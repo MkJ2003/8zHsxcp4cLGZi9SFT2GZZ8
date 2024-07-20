@@ -136,8 +136,8 @@ app.post('/api/create-checkout-session', fetchuser, async (req, res) => {
     }],
     customer: customer.id,
     mode: "payment",
-    success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000/cancel"
+    success_url: "https://669c035d017118aa46b7cca8--animated-lolly-bc9f3b.netlify.app/success",
+    cancel_url: "https://669c035d017118aa46b7cca8--animated-lolly-bc9f3b.netlify.app//cancel"
 
   })
   res.json({
