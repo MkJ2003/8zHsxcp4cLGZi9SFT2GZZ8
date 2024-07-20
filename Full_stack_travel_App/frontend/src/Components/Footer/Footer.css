@@ -1,0 +1,141 @@
+/* .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 20px;
+    color:#ebebeb;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-logo p{
+    
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer-logo img{
+    width: 50px;
+}
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    
+    font-size: 16px;
+}
+.footer-links li{
+    cursor: pointer;
+}
+.footer-social-icons{
+    display: flex;
+    gap: 10px;
+}
+.footer-icons-container{
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+}
+.footer-icons-container img{
+    width: 25px;
+}
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    font-size: 16px;
+}
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    background: #c7c7c7;
+}
+@media(max-width:800px){
+    .footer-links{
+        gap: 20px;
+        font-size: 14px;
+    }
+} */
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 2rem 0 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #3498db;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #3498db;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #3498db;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #34495e;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9rem;
+  }

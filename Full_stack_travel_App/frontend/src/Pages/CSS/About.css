@@ -1,0 +1,32 @@
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background:linear-gradient(to top left,#3ed8ff,#a8f5ff) ;
+    padding-top: 130px;
+    padding-bottom: 40px;
+  }
+  
+  .about-container {
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    color:"#fff"
+  }
+  
+  .about-container h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-container p {
+    color: #fff;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify;
+  }

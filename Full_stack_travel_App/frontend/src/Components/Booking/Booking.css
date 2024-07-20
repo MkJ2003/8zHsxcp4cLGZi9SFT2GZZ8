@@ -1,0 +1,112 @@
+.mainContainer{
+  text-align: center;
+  background:linear-gradient(to top left,#a6c4cc,#a8f5ff) ;
+  height: 100vh;
+  overflow: auto;
+  padding:70px 0px;
+}
+
+.circle
+{
+    width:200px;
+    height:200px;
+    background-color: white;
+    border-radius:100px;
+    position:absolute;
+    background:linear-gradient(to top right,#ffffff33,#ffffffff);
+}
+.c1{
+    top:140px;
+    left:40px;
+}
+.c2{
+    bottom:100px;
+    right:50px;
+}
+
+.booking-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+    
+  }
+  
+  .booking-form-image-container {
+    height: 200px;
+    background-image: url('../Assets/booking.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .booking-form-form-container {
+    padding: 30px;
+  }
+  
+  .booking-form-form-container h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .booking-form {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .booking-form label {
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .booking-form input,
+  .booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .booking-form input:focus,
+  .booking-form select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .booking-form button {
+    background-color: #db345e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+  
+  .booking-form button:hover {
+    background-color: #770c1f;
+  }
+  
+  @media (max-width: 480px) {
+    .booking-form-container {
+      margin: 10px;
+    }
+    
+    .booking-form-form-container {
+      padding: 20px;
+    }
+  }

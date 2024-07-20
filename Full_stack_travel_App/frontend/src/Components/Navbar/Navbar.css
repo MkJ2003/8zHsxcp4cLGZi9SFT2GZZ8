@@ -1,0 +1,142 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f172a;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* margin-bottom: 100px; */
+
+}
+
+.nav .nav-logo {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    display: block;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+}
+
+.nav-login-cart button {
+    width: 120px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+.nav-login-cart img {
+    width: 35px;
+}
+
+.nav-cart-count {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -40px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+.nav .menu {
+    display: none;
+  
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+
+}
+
+.nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+@media (max-width:760px) {
+    .nav .menu {
+      
+            display: flex;
+            flex-direction: column;;
+            position: absolute;
+            top: 0.75rem;
+            right:20rem;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 2.25rem;
+            height: 2rem;
+        
+        
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav ul {
+        display:none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    .nav ul.open{
+        display:flex;
+    }
+    .nav ul li {
+        width:100%;
+        text-align: center;
+    }
+    .nav-login-cart {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position:absolute;
+        top:0.75rem;
+        right:4rem;
+    }
+
+
+}
