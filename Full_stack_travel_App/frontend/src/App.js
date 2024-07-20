@@ -17,7 +17,7 @@ import Success from "./Components/Success/Success";
 import Cancel from "./Components/Cancel/Cancel";
 import About from "./Pages/About";
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = 'https://travel-app-backend-new.onrender.com';
 export const currency = '₹';
 
 function App() {
