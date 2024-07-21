@@ -17,7 +17,13 @@ const stripe = require("stripe")(process.env.STRIPE_KEY);
 const endpointSecret = process.env.END_SECRET;
 const mongoURI = process.env.MONGODB_URI;
 
-app.use(cors());
+const corsOptions = {
+  origin: `${process.env.FRONTEND_URL}`,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
