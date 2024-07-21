@@ -18,11 +18,12 @@ const endpointSecret = process.env.END_SECRET;
 const mongoURI = process.env.MONGODB_URI;
 
 const corsOptions = {
-  origin: `${process.env.FRONTEND_URL}`,
-  optionsSuccessStatus: 200
+  origin: process.env.FRONTEND_URL || '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 };
-
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 
 mongoose.connect(process.env.MONGODB_URI, {
