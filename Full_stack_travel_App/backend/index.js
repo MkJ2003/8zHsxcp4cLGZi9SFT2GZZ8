@@ -26,51 +26,6 @@ mongoose.connect(process.env.MONGODB_URI, {
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('MongoDB connection error:', err));
 
-app.post('/webhook', express.raw({
-  type: 'application/json'
-}), async (req, res) => {
-  const sig = req.headers[process.env.SIGNATURE];
-
-  let event;
-  let data;
-  let eventType;
-  try {
-    event = stripe.webhooks.constructEvent(req.body, sig, endpointSecret);
-    console.log("webhook verified");
-
-
-
-  } catch (err) {
-    console.log(`Webhook Error: ${err.message}`);
-    response.status(400).send(`Webhook Error: ${err.message}`);
-    return;
-  }
-  eventType = event.type;
-  data = event.data.object;
-
-  if (eventType === "checkout.session.completed") {
-    try {
-      const customer = await stripe.customers.retrieve(data.customer)
-      const newPayment = new paymentDetails({
-
-        user_id: customer.metadata.user_id,
-        place: customer.metadata.product_name,
-        visitor: customer.metadata.visitor,
-        total_payment: customer.metadata.total_price,
-        payment_status: data.payment_status,
-
-
-      })
-      const savedPayment = await newPayment.save();
-
-    } catch (err) {
-      console.log("Error retrieving customer:", err.message);
-    }
-  }
-
-  res.send().end();
-});
-
 
 app.use(express.json());
 
